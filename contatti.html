@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CHIEF assocoazione per la messa in sicurzza di beni artisctici e culturali dopo eventi catastrofici">
+  <meta name="keywords" content="CHIEF, eventi catastrofici, messa in sicurezza, beni artisici, beni culturali">
+  <meta name="author" content="Corso del martedi MIND">
+  <title>CHIEF - Cultural Heritage International Emergecy Force</title>
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="stylesheet" type="text/css" href="css/stylecontatti.css">
+
+</head>
+
+<body>
+  
+  <header>
+    <!-- Header con corpo centrale di - logo a sinistra di - 3 menu a destra -->
+
+    <div id="navbar">
+
+      <div id="logo">
+        <a href="index.html"><img src="image/chief_logo.svg" alt="logo"></a>
+      </div>
+
+      <div class="icon-bar" onclick="Show()">
+        <i></i>
+        <i></i>
+        <i></i>
+      </div>
+
+      <ul id="nav-menu">
+        <!-- <li class="anchor_menu"><span onclick="Hide()">×</span></li> -->
+        <li><a class="page-active" href="#">Home</a></li>
+        <li><a href="#">Cosa Facciamo</a></li>
+        <li><a href="#">Chi Siamo</a></li>
+        <li><a href="#">Iniziative</a></li>
+        <li><a href="#">Diario</a></li>
+        <li><a href="#">Contatti</a></li>
+      </ul>
+
+      <ul id="nav-language">
+        <!-- <li class="close"><span onclick="Hide()">×</span></li> -->
+        <li><a href="#"><img src="image/italy-flag-icon-40.png" alt="bandiera italiana"></a></li>
+        <li><a href="#"><img src="image/eng-flag-icon-40-noactive.png" alt="bandiera inglese"></a></li>
+      </ul>
+
+      <ul id="nav-special">
+        <!-- <li class="close"><span onclick="Hide()">×</span></li> -->
+        <li id="socio"><a href="#">Diventa Socio</a></li>
+        <li id="dona"><a href="#">Dona</a></li>
+      </ul>
+    </div>
+  </header>
+            
+    <div id="slider_contatti"> <!-- FASCIA CONTATTI-->
+
+        <div class="head-img-contatti">Restiamo in Contatto</div>
+      </div>
+
+      <div class="mappa_italia">       <!-- FASCIA SEDI-->
+        <div id="sedi">
+        <h1>Le nostre sedi:</h1><br>
+        <h2>Torino</h2>
+        <h2>Genova</h2>
+        <h2>Ferrara</h2>
+        <h2>Bologna</h2>
+        </div>
+        <img id="logo_svg" src="image/chief_logo.svg">
+        <img id="italia_svg" src="image/italy.svg">
+      </div>
+
+
+      <div class="form"> <!-- FASCIA FORM-->
+
+        <h1>Contattaci</h1>
+        <h4>Compila il seguente form per lasciarci un contatto, cercheremo di rispondere nel più breve tempo possibile.
+        </h4>
+        <form id="stile_form" action="ricevi_contatti.php" method="post">
+          <div id="stile_input">
+            <div>
+          <Label for="nome_for">Nome</Label><br>
+          <input id="nome_for" type="text" name="nome">
+            </div>
+            <div>
+            <Label for="cognome_for">Cognome</Label><br>
+            <input id="cognome_for" type="text" name="cognome">
+            </div>
+            <div>
+              <Label for="email_for">Email</Label><br>
+              <input id="email_for" type="email" name="email">
+              </div>
+              <div>
+              <label for="regione_for">Regione di provenienza</label><br>
+              <select name="regioni" id="">
+                <option value="none">Scegli</option>
+                <option value="Abruzzo">Abruzzo</option>
+                <option value="Basilicata">Basilicata</option>
+                <option value="Calabria">Calabria</option>
+                <option value="Campania">Campania</option>
+                <option value="Emilia-Romagna">Emilia-Romagna</option>
+                <option value="Friuli-Venezia-Giulia">Friuli-Venezia-Giulia</option>
+                <option value="Lazio">Lazio</option>
+                <option value="Liguria">Liguria</option>
+                <option value="Lombardia">Lombardia</option>
+                <option value="Marche">Marche</option>
+                <option value="Molise">Molise</option>
+                <option value="Piemonte">Piemonte</option>
+                <option value="Puglia">Puglia</option>
+                <option value="Sardegna">Sardegna</option>
+                <option value="Sicilia">Sicilia</option>
+                <option value="Toscana">Toscana</option>
+                <option value="Trentino-Alto-Adige">Trentino-Alto-Adige</option>
+                <option value="Umbria">Umbria</option>
+                <option value="Valle d'Aosta">Valle d'Aosta</option>
+                <option value="Veneto">Veneto</option>
+              </select>
+              </div>
+          </div>
+          
+              <div id="stile_textarea">
+                <label for="messaggio_for">Messaggio</label><br>
+                <textarea name="messaggio" id="messaggio_for" cols="30" rows="10" placeholder="Scrivi qui il tuo messaggio"></textarea>
+              </div>
+              </form>
+
+      </div>
+    <footer> <!-- FASCIA FOOTER-->
+
+        <div class="fascia_footer">
+          <div class="blocco_chief">
+            <h3>CHIEF - ETS è:
+            </h3>
+            <ul>
+              <li>Associazione di Volontariato di Protezione Civile </li> 
+              <li>Iscritta all’elenco territoriale delle organizzazioni di Volontariato di Protezione Civile della Regione Piemonte</li> 
+            </ul>
+          </div>
+          <div class="blocco_sedi">
+            <h3>SEDI </h3> <br>
+              <li>Torino</li>
+              <li>Genova</li>
+              <li>Ferrara</li>
+              <li>Bologna</li>
+          </div>
+          <div class="blocco_soci">
+            <h3>Diventa socio</h3>
+            <br>
+            <div id="blocco_soci_dona">
+              <h3>Dona!</h3>
+            </div>
+          </div>
+          <div class="blocco_loghi">
+            <img src="image/loghi-footer.jpg" alt="">
+        </div>
+      </div>
+      <div id="privacy_cookie">
+        <p>CHIEF Onlus © Tutti i diritti riservati | via Giolitti 21, 10123 Torino - Cod. Fiscale 804589556615 - P. Iva -
+        <a href="http://" target="_blank">Politica sulla privacy.</a>
+        <a href="http://" target="_blank">Aggiorna la tua preferenza sui Cookie.</a>
+        </p>
+      </div>
+      </footer>
