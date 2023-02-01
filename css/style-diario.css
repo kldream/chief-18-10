@@ -73,76 +73,6 @@ header{
   text-decoration: none;
   color: #fff;
 }
-                                                        
-.slider-iniziative{                                                  /* Inizio pagina iniziative*/
-  height: 500px;
-  background-image: url(../img/foto_iniziative.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.6);
-  display: flex;
-  align-items: flex-end;
-}  
-.head-img-iniziative{
-  color: #ffffff;
-  margin-bottom: 70px;
-  background-color: rgba(43, 117, 181, 0.8);
-  width: 260px;
-  text-align: center;
-  padding: 20px 0;
-  border-radius: 0 20px 20px 0;
-}
-.page-content{
-  width: 1300px;
-  margin: 50px auto 0;
-}
-.post-content{
-  display: flex;
-  justify-content: space-around;
-}
-.preamble{
-  padding: 50px 50px 0 0;
-}
-h2{
-  font-size: 20px;
-  padding-bottom: 40px;
-  color: #2B75B5;
-}
-.preamble p{
-  font-size: 18px;
-  padding-bottom: 40px;
-  color: #2B75B5;
-}
-hr{
-  margin: 40px 0;
-}
-.item-story{
-  margin: 20px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.item-element{
-  width: 500px;
-  padding-top: 20px;
-}
-.item-element img{
-  padding-bottom: 20px;
-}
-.item-element p{
-  padding-bottom: 20px;
-  font-size: 18px;
-  color: #2B75B5;
-}
-.item-element a{
-  font-size: 18px;
-  text-decoration: none;
-  float: right;
-  color: #2B75B5;
-  padding-bottom: 30px;
-}                                                            /*Fine pagina iniziative*/
-
 .slider-diario{                                              /* Inizio pagina diario*/
   height: 500px;
   background-image: url(../img/foto_diario.jpg);
@@ -164,10 +94,8 @@ hr{
   border-radius: 20px 0 0 20px;
 }
 .interventi-diario{
- 
   background-color: #ffffff;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 0 20px 0;
 }
 .interventi h2{
   font-size: 50px;
@@ -191,7 +119,7 @@ hr{
   max-width: 1300px;
   margin: 0 auto;
   height: auto;
-  padding: 40px 0;
+  padding: 20px 0 40px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -200,7 +128,7 @@ hr{
   background-color: #fff;
 }
 .blocco-diario{
-  background-color: #1F538F;
+  background-color: #0977d4;
   width: 300px;
   height: 485px;
 }
@@ -228,7 +156,7 @@ hr{
   color: #fff;
 }
 .eventi-diario{
-  background-color: #d9f0fb87;
+  background-color: #a6cde05e;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -251,7 +179,7 @@ hr{
   color: #2B75B5;
 }
 .formazione-diario{
-  background-color: #9dc2eee6;
+  background-color: #9cbcdcc4;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -272,9 +200,10 @@ hr{
   font-weight: 600;
   padding-left: 110px;
   color: #2B75B5;
-}                                                          /* Fine pagina diario*/
-
-
+}
+.formazione a{
+  text-decoration: none;
+}
 footer{
   background-color: #2B75B5;
   height: 300px;
@@ -293,8 +222,6 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 }
-
-
 .blocco-footer{
   width: 240px;
   height: 150px;
