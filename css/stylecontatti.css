@@ -1,0 +1,388 @@
+@charset "UTF-8";
+
+:root {
+  --azzurro_chiaro: #2098C8;
+  --azzurro_medio: #2B75B5;
+  --azzurro_scuro: #1F538F;
+  --testo_bianco: #f6f6f6;
+
+}
+
+* {
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+p{
+  font-size: 16px;
+  color: var(--azzurro_medio);
+}
+
+ /* INIZIO MENU */
+
+#navbar h3{
+  font-size: 26px;
+}
+
+header{
+  height: 90px;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.4);
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+} 
+header ul{
+  list-style: none;
+}
+
+#navbar{
+  width: auto;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#logo{
+  height: 230px;
+  display: flex;
+  align-items: end;
+}
+
+#logo a img{
+  height: 156px;
+  width: 133px;
+}
+
+#nav-menu a, #nav-language a, #nav-special a{ 
+  text-decoration: none;
+}
+
+.page-active {
+  font-size: bold;
+}
+
+#nav-menu{
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#nav-menu li{
+  padding-right: 25px;
+}
+
+#nav-menu a{
+  color: var(--azzurro_medio);
+  text-decoration: underline 0.15em #fff;
+  transition: text-decoration-color 500ms;
+}
+
+#nav-menu a:hover {
+  text-decoration-color: var(--azzurro_medio);
+}
+
+#nav-language{
+  display: flex;
+  justify-content: space-between;
+}
+#nav-language li{
+  padding-right: 10px;
+}
+
+#nav-special{
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+#nav-special li {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0px 5px;
+  padding: 22px 35px;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.6);
+  border-radius: 0 0 8px 8px;
+}
+#socio{
+  background-color: #2098C8;
+}
+#socio a{
+  color: #ffffff;
+}
+
+#dona{
+  background-color: #2B75B5;
+  color: #ffffff;
+}
+#dona a{
+  color: #ffffff;
+}
+
+/* sezione slider */
+
+#slider{
+  height: 800px;
+  background-image: url(../image/slider_01.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.head-img-home{
+  color: #ffffff;
+  font-size: 52px;
+  font-weight: bold;
+  background-color: rgba(43, 117, 181, 0.8);
+  width: 50%;
+  height: 150px;
+  padding-top: 12px;
+  padding-right: 20%;
+  border-radius: 70px 0 0 70px;
+}
+
+.fascia-colore-a{
+  background-color: #d2f2ff;
+}
+
+.fascia-a{
+  max-width: 1720px;
+  margin: 0 auto;
+  height: 600px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.mission img{
+  height:340px;
+}
+
+.descrizioni p{
+  padding: 10px 80px 10px 190px;
+  text-align: justify;
+}
+
+.fascia-b{
+  max-width: 1720px;
+  margin: 0 auto;
+  height: auto;
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fascia-colore-b{
+  background-color: #2098C8;
+}
+
+.blocco{
+  background-color: #1F538F;
+  width: 440px;
+  height: 620px;
+}
+
+.blocco h3, .blocco p{
+  color: #ffffff;
+  padding: 20px;
+  font-weight: normal;
+}
+
+.blocco img{
+  padding: 0;
+  width: 440px;
+  height: 440px;
+}
+
+
+footer{
+  background-color: #2B75B5;
+  height: 300px;
+}
+
+/* nascondo di default il menu hamburger */
+.menu_responsive{
+  display: none;
+  display: block;
+}
+
+/* STILE PAGINA CONTATTI */
+
+#slider_contatti{
+  height: 500px;
+  background-image: url(../image/Contatti\ sfondo.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.6);
+  align-items: center;
+  text-align: right;
+}
+
+.head-img-contatti{
+  color: #ffffff;
+  min-width: 540px;
+  font-size: 52px;
+  font-weight: bold;
+  background-color: rgba(43, 117, 181, 0.8);
+  width: 40%;
+  height: 120px;
+  padding-top: 3vh;
+  border-radius: 0 40px 40px 0;
+  text-align: center;
+}
+
+/* SEDI */
+
+.mappa_italia{
+  background-image: url(..image/chief_logo.svg);
+  width: auto;
+  height: 800px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 40px;
+}
+
+#sedi{
+  width: auto;
+  height: auto;
+  z-index: 1;
+  position: absolute;
+  left: 5%;
+  margin-top: 5%;
+  font-size: 3rem;
+  color: var(--azzurro_medio);
+}
+
+#italia_svg{
+  opacity: 80%;
+}
+#logo_svg{
+  opacity: 10%;
+ max-width: -webkit-fill-available;
+}
+
+/* FORM */
+
+.form{
+width: auto;
+height: 600px;
+background-color: var(--azzurro_chiaro);
+flex-direction: column;
+justify-content: space-around;
+}
+.form h4{
+  color: #fff;
+  padding: 24px;
+  font-size: 1rem;
+  font-style: italic;
+}
+.form h1{
+  color: var(--azzurro_scuro);
+  min-width: 540px;
+  font-size: 52px;
+  font-weight: bold;
+  background-color: #fff;
+  width: 40%;
+  height: 120px;
+  padding-top: 3vh;
+  border-radius: 0 40px 40px 0;
+  text-align: center;
+}
+
+#stile_form{
+  margin: 0 auto;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+#stile_form, input{
+  width: 400px;
+  height: 26px;
+}
+
+/* STILE FASCIA FOOTER */
+
+.fascia_footer{
+width: auto;
+height: auto;
+display: flex;
+justify-content: space-evenly;
+text-decoration: none;
+color: #fff;
+}
+
+.fascia_footer li{
+  font-size: 1em;
+}
+
+.blocco_chief{
+  width: 18%;
+  height: 220px;
+  background-color: var(--azzurro_scuro);
+  padding: 24px;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.6);
+  font-size: 1em;
+  overflow: hidden;
+}
+
+.blocco_sedi{
+  width: 18%;
+  height: 220px;
+  background-color: var(--azzurro_scuro);
+  padding: 24px;
+  border-radius: 0 0 20px 20px;
+}
+
+.blocco_soci{
+  width: 18%;
+  height: 220px;
+  background-color: var(--azzurro_scuro);
+  padding: 24px;
+  border-radius: 0 0 20px 20px;
+}
+
+#blocco_soci_dona{
+
+  padding: 20px;
+}
+
+.blocco_loghi{
+  text-align: center;
+  width: 18%;
+  height: 220px;
+  background-color: #ffffff;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.6);
+}
+.blocco_loghi img{
+  height: 10vw;
+}
+
+#privacy_cookie p{
+margin-top: 26px;
+font-size: 14px;
+color: var(--testo_bianco);
+text-align: center;
+}
+
+#privacy_cookie a{
+  text-decoration: none;
+  color: var(--testo_bianco);
+}
+
+
